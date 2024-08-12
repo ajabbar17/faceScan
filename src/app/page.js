@@ -13,7 +13,7 @@ export default function Home() {
      {/* <FactorAuthenticationSetup/> */}
      {/* <DocumentCard/> */}
      {/* <LocationVerification/> */}
-     <RecoveryOptions/>
+     {/* <RecoveryOptions/> */}
     </main>
   );
 }
