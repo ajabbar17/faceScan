@@ -15,7 +15,7 @@ export default function AdvancedFaceRecognitionSetup() {
         Advanced Face Recognition Setup
       </h1>
       <p className="text-gray-700 mb-3">
-        To enhance security, we'll need to scan your face. Follow the instructions below.
+        To enhance security, we&apos;ll need to scan your face. Follow the instructions below.
       </p>
       <div className="bg-white p-6 rounded-lg w-1/3">
         <div className="mb-2">

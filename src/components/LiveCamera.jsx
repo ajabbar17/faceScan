@@ -29,7 +29,7 @@ const LiveCamera = () => {
         Advanced Face Recognition Setup
       </h1>
       <p className="text-gray-700 text-center mb-3">
-        To enhance security, we'll need to scan your face. Follow the
+        To enhance security, we&apos;ll need to scan your face. Follow the
         instructions below.
       </p>
       <div className="bg-white p-3 rounded-lg w-auto md:w-1/4">

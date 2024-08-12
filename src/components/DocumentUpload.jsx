@@ -39,7 +39,7 @@ export default function DocumentUpload() {
         Document Upload
       </h1>
       <p className="text-center text-gray-500">
-        Supported Documents: ID Card, Passport, Driver's License
+        Supported Documents: ID Card, Passport, Driver&apos;s License
       </p>
 
       <div className="mt-8 bg-gray-300 rounded-lg h-64 flex items-center justify-center">

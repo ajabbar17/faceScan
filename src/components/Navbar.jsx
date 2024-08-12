@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 
 export default function Navbar() {
     const [active, setActive] = useState('');
@@ -25,7 +26,7 @@ export default function Navbar() {
         <nav className="flex justify-between items-center py-0 px-5 bg-white shadow-md">
             {/* Logo on the left */}
             <div className="text-xl font-bold flex-shrink-0">
-                <img src="/Logo.png" alt="Logo" className="h-20" />
+                <Image width={200} height={200} src="/Logo.png" alt="Logo" className="h-20" />
             </div>
 
             {/* Desktop Menu */}
