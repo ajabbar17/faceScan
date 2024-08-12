@@ -20,8 +20,11 @@ const LiveCamera = () => {
       }, 5000);
 
     // Clean up the interval on component unmount
-    return () => clearInterval(interval,interval2);
-  }, []);
+    return () => {
+      clearInterval(interval);
+      clearTimeout(interval2);
+    };
+    }, []);
 
   return (
     <div className="min-h-screen flex flex-col gap-3 items-center w-full p-4">

@@ -17,7 +17,7 @@ const AdFace = () => {
     
   }
   const handleback = ()=>{
-    router.back("/dashboard")
+    router.push("/dashboard");
   }
 
   return (
