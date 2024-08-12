@@ -19,7 +19,7 @@ const FaceMatching = () => {
     const timer = setTimeout(() => {
       setShowButtons(true);
       setImageSrc('/Live.png');
-    }, 4000); // 3000ms = 3 seconds
+    }, 3000); // 3000ms = 3 seconds
 
     // Cleanup the timer if the component unmounts before 3 seconds
     return () => clearTimeout(timer);

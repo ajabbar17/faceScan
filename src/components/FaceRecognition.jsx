@@ -10,14 +10,14 @@ export default function AdvancedFaceRecognitionSetup() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col gap-3 items-center w-full p-4">
-      <h1 className="text-5xl font-bold text-orange-500">
+    <div className="min-h-screen flex text-center flex-col gap-3 items-center w-full p-4">
+      <h1 className="text-3xl md:text-5xl font-bold text-orange-500">
         Advanced Face Recognition Setup
       </h1>
       <p className="text-gray-700 mb-3">
         To enhance security, we&apos;ll need to scan your face. Follow the instructions below.
       </p>
-      <div className="bg-white p-6 rounded-lg w-1/3">
+      <div className="bg-white p-6 rounded-lg w-full md:w-1/3">
         <div className="mb-2">
           <h2 className="text-2xl font-semibold text-center text-orange-400">
             Live Camera Feed
@@ -30,7 +30,7 @@ export default function AdvancedFaceRecognitionSetup() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between space-x-3 w-1/3">
+      <div className="flex  justify-between space-x-3  w-full md:w-1/3">
         <button className="bg-gray-200 w-1/2 text-gray-700 py-2 px-10 rounded-md">
           Back
         </button>

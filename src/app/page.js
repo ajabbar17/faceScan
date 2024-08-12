@@ -4,6 +4,7 @@ import LocationVerification from "@/components/Location";
 import LocationPopup from "@/components/LocationPopup";
 import OTPVerification from "@/components/Otp";
 import RecoveryOptions from "@/components/RecoveryOptions";
+import Splash from "@/components/Splash";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
      {/* <DocumentCard/> */}
      {/* <LocationVerification/> */}
      {/* <RecoveryOptions/> */}
+     <Splash/>
     </main>
   );
 }
