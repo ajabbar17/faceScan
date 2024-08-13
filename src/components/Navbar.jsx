@@ -90,6 +90,17 @@ export default function Navbar() {
                             Location
                         </div>
                     </Link>
+                <li>
+                    <Link href="/dashboard/recoveryoptions">
+                        <div
+                            className={`cursor-pointer ${
+                                active === 'Recovery' ? 'border-b-2 border-orange-500' : ''
+                            } hover:text-orange-500 transition duration-300`}
+                            onClick={() => handleSetActive('Recovery')}
+                        >
+                            Recovery
+                        </div>
+                    </Link>
                 </li>
                
             </ul>
@@ -173,6 +184,18 @@ export default function Navbar() {
                             </div>
                         </Link>
                     </li>
+                    <li>
+                    <Link href="/dashboard/recoveryoptions">
+                        <div
+                            className={`cursor-pointer ${
+                                active === 'Recovery' ? 'border-b-2 border-orange-500' : ''
+                            } hover:text-orange-500 transition duration-300`}
+                            onClick={() => handleSetActive('Recovery')}
+                        >
+                            Recovery
+                        </div>
+                    </Link>
+                </li>
                    
                     <li>
                             <button
