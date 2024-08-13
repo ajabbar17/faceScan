@@ -90,6 +90,8 @@ export default function Navbar() {
                             Location
                         </div>
                     </Link>
+                    </li>
+
                 <li>
                     <Link href="/dashboard/recoveryoptions">
                         <div
