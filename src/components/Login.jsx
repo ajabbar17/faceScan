@@ -1,9 +1,15 @@
+"use client"
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaGoogle, FaFacebook, FaEnvelope, FaLock } from 'react-icons/fa';
 
 export default function Login() {
- 
+  const router = useRouter();
+   
+  const handleDashboard = ()=>{
+      router.push("/dashboard")
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
@@ -30,8 +36,9 @@ export default function Login() {
           </div>
 
           <button 
-            type="submit" 
+            type="button" 
             className="w-full py-3 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-600 transition duration-300"
+          onClick={handleDashboard}
           >
             Log In
           </button>

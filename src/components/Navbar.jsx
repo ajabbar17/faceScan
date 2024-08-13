@@ -68,41 +68,30 @@ export default function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href="/reports">
+                    <Link href="/admin">
                         <div
                             className={`cursor-pointer ${
-                                active === 'Reports' ? 'border-b-2 border-orange-500' : ''
+                                active === 'Admin' ? 'border-b-2 border-orange-500' : ''
                             } hover:text-orange-500 transition duration-300`}
-                            onClick={() => handleSetActive('Reports')}
+                            onClick={() => handleSetActive('Admin')}
                         >
-                            Reports
+                            Admin
                         </div>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/userprofile">
+                    <Link href="/users/location">
                         <div
                             className={`cursor-pointer ${
-                                active === 'User Profile' ? 'border-b-2 border-orange-500' : ''
+                                active === 'Location' ? 'border-b-2 border-orange-500' : ''
                             } hover:text-orange-500 transition duration-300`}
-                            onClick={() => handleSetActive('User Profile')}
+                            onClick={() => handleSetActive('Location')}
                         >
-                            User Profile
+                            Location
                         </div>
                     </Link>
                 </li>
-                <li>
-                    <Link href="/contactus">
-                        <div
-                            className={`cursor-pointer ${
-                                active === 'Contact Us' ? 'border-b-2 border-orange-500' : ''
-                            } hover:text-orange-500 transition duration-300`}
-                            onClick={() => handleSetActive('Contact Us')}
-                        >
-                            Contact Us
-                        </div>
-                    </Link>
-                </li>
+               
             </ul>
 
             {/* Login Button & Mobile Menu Icon */}
@@ -161,41 +150,30 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/reports">
+                        <Link href="/admin">
                             <div
                                 className={`cursor-pointer ${
                                     active === 'Reports' ? 'border-b-2 border-orange-500' : ''
                                 } hover:text-orange-500 transition duration-300`}
-                                onClick={() => handleSetActive('Reports')}
+                                onClick={() => handleSetActive('Admin')}
                             >
-                                Reports
+                                Admin
                             </div>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/userprofile">
+                        <Link href="/users/location">
                             <div
                                 className={`cursor-pointer ${
-                                    active === 'User Profile' ? 'border-b-2 border-orange-500' : ''
+                                    active === 'Location' ? 'border-b-2 border-orange-500' : ''
                                 } hover:text-orange-500 transition duration-300`}
-                                onClick={() => handleSetActive('User Profile')}
+                                onClick={() => handleSetActive('Location')}
                             >
-                                User Profile
+                                Location
                             </div>
                         </Link>
                     </li>
-                    <li>
-                        <Link href="/contactus">
-                            <div
-                                className={`cursor-pointer ${
-                                    active === 'Contact Us' ? 'border-b-2 border-orange-500' : ''
-                                } hover:text-orange-500 transition duration-300`}
-                                onClick={() => handleSetActive('Contact Us')}
-                            >
-                                Contact Us
-                            </div>
-                        </Link>
-                    </li>
+                   
                     <li>
                             <button
                             onClick={handleClick}

@@ -1,10 +1,18 @@
+"use client"
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { FaGoogle, FaFacebook, FaEnvelope, FaLock } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 
 
 export default function SignUp() {
+
+    const router = useRouter();
+   
+    const handleOtp = ()=>{
+        router.push("/otp")
+    }
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-md shadow-slate-500 w-full">
@@ -39,8 +47,9 @@ export default function SignUp() {
           </div>
 
           <button 
-            type="submit" 
+          type='button'
             className="w-full py-3 bg-yellow-500 text-white font-bold rounded-lg hover:bg-yellow-600 transition duration-300"
+            onClick={handleOtp}
           >
             Sign Up
           </button>
